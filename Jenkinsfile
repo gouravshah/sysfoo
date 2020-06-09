@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        tool(name: 'Maven', type: 'Maven 3.6.3')
+        tool(name: 'maven', type: 'Maven 3.6.3')
         sh 'mvn compile'
       }
     }
